@@ -1,0 +1,12 @@
+TEST_VALUE:
+  name: cookie
+MONGODB_CONFIG:
+  name: 'monitor_dev' # 自定義次資料庫連結名稱
+  type: mongodb # 資料庫連結類型
+  url: 'mongodb://localhost:27017' # 資料庫連結位址
+  username: 'xxxx' # 資料庫鏈接使用者名
+  password: '123456' # 資料庫鏈接密碼
+  database: 'monitor_dev' # 資料庫名
+  entities: 'mongo' # 自定義載入類型
+  logging: false # 資料庫列印日誌
+  synchronize: true # 是否開啟同步數據表功能
