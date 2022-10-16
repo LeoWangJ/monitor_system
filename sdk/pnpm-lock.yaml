@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@babel/core': ^7.19.3
   '@babel/preset-typescript': ^7.18.6
+  '@fingerprintjs/fingerprintjs': ^3.3.6
   '@rollup/plugin-typescript': ^9.0.1
   '@types/jest': ^29.1.2
   '@types/tti-polyfill': ^0.2.1
@@ -22,6 +23,7 @@ specifiers:
   typescript: '*'
 
 dependencies:
+  '@fingerprintjs/fingerprintjs': 3.3.6
   rollup: 3.1.0
   tti-polyfill: 0.2.2
 
@@ -481,6 +483,12 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@fingerprintjs/fingerprintjs/3.3.6:
+    resolution: {integrity: sha512-Inh0OoFVzO2PLvrUF8RZhY9NVDdg9DJHQ5YlvXhrGtQxSPzy2smS3TWzLAi+zlHSJNHSvi+1zYayLen2lGxjdA==}
+    dependencies:
+      tslib: 2.4.0
+    dev: false
 
   /@humanwhocodes/config-array/0.10.7:
     resolution: {integrity: sha512-MDl6D6sBsaV452/QSdX+4CXIjZhIcI0PELsxUjk4U828yd58vk3bTIvk/6w5FY+4hIy9sLW0sfrV7K7Kc++j/w==}
@@ -3559,6 +3567,10 @@ packages:
   /tslib/1.14.1:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
     dev: true
+
+  /tslib/2.4.0:
+    resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
+    dev: false
 
   /tsutils/3.21.0_typescript@4.8.4:
     resolution: {integrity: sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==}
