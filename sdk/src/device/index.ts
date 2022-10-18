@@ -122,10 +122,10 @@ function getBrowserInfo (userAgent: string, browser: string, engine: string) {
       return userAgent.replace(/^.*Arora\/([\d.]+).*$/, '$1')
     },
     Lunascape: function () {
-      return userAgent.replace(/^.*Lunascape[\/\s]([\d.]+).*$/, '$1')
+      return userAgent.replace(/^.*Lunascape[/\s]([\d.]+).*$/, '$1')
     },
     QupZilla: function () {
-      return userAgent.replace(/^.*QupZilla[\/\s]([\d.]+).*$/, '$1')
+      return userAgent.replace(/^.*QupZilla[/\s]([\d.]+).*$/, '$1')
     },
     'Coc Coc': function () {
       return userAgent.replace(/^.*coc_coc_browser\/([\d.]+).*$/, '$1')
@@ -161,7 +161,7 @@ function getBrowserInfo (userAgent: string, browser: string, engine: string) {
       return userAgent.replace(/^.*QQ\/([\d.]+).*$/, '$1')
     },
     Baidu: function () {
-      return userAgent.replace(/^.*BIDUBrowser[\s\/]([\d.]+).*$/, '$1')
+      return userAgent.replace(/^.*BIDUBrowser[\s/]([\d.]+).*$/, '$1')
     },
     UC: function () {
       return userAgent.replace(/^.*UC?Browser\/([\d.]+).*$/, '$1')

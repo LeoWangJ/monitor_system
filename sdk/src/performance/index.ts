@@ -2,6 +2,7 @@ import type { PerformanceOptions, ObjectKey } from '../type'
 import ttiPolyfill from 'tti-polyfill'
 import { clearPerformance, getEntries, getTiming, measure } from './performance'
 import { getDeviceId, markUv } from '../utils'
+import { deviceInfo } from '../device'
 
 function monitorPerformance (options: PerformanceOptions): void {
   ttiPolyfill.getFirstConsistentlyInteractive().then(async (tti) => {
@@ -26,6 +27,7 @@ function monitorPerformance (options: PerformanceOptions): void {
       pageId: options.pageId || '',
       projectId: options.projectId || 0,
       pageUrl: location.href,
+      deviceInfo: deviceInfo(),
       type: 'performance'
     }
     console.log(report)

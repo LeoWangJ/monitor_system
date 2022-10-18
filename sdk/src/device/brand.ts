@@ -134,7 +134,7 @@ const uaMathList = [
 ]
 
 export const brandUa = {
-  getBrand: function (ua) {
+  getBrand: function (ua: string) {
     for (let i = 0; i < uaMathList.length; i++) {
       const uaDetail = uaMathList[i]
       for (let j = 0; j < uaDetail.matchList.length; j++) {

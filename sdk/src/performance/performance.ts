@@ -3,7 +3,7 @@
 import type { Entry, ObjectKey } from '../type'
 
 // FP FCP longtack 容器
-const ttiTime = {}
+const ttiTime: { [key: string]: number } = {}
 
 // FP FCP
 const observerPaint = new PerformanceObserver(list => {
@@ -115,7 +115,7 @@ function clearPerformance () {
 }
 
 // 獲取函式運行時長
-function measure (fn) {
+function measure (fn: () => void) {
   const startTime = performance.now()
   fn()
   const endTime = performance.now()
