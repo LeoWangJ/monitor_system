@@ -6,8 +6,17 @@
   <title>Test</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <script src='../dist/monitor-sdk.js'></script>
+  <script>
+    Monitor.startPerformance({
+      pageId: 0,
+      projectId: 'playground',
+      url: 'http://127.0.0.1:5500/sdk/playground/index.html',
+      isPage: true,
+      isResource: true
+    })
+  </script>
 </head>
 <body>
-  
+  hello , this is my sdk playground
 </body>
 </html>
